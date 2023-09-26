@@ -2,9 +2,6 @@
 ---
 ## Como executar
 
-
-## Como executar através do Docker
-
 Certifique-se de ter o [Docker](https://docs.docker.com/engine/install/) instalado e em execução em sua máquina.
 
 Execute **como administrador** o seguinte comando para construir a imagem Docker:
