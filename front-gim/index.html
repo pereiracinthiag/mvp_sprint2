@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <title>GID</title>
+</head>
+
+<body>
+
+
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Gerador de Identificação de Medidores</h2>
+        </div>
+        <!-- <div class="banner">
+            <img src="img/banner.jpg?width=1200&height=630&fit=crop"
+                alt="y">
+        </div> -->
+    </header>
+
+    <div class="˜container">
+     <!-- Opções para adicionar um novo item -->
+     
+    <section class="newItem col-md-12">
+        <input type="text" id="newInput" placeholder="TAG do Medidor:">
+        <span onclick="newItem()" class="addBtn">Buscar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items col-md-12">
+
+        <form id="myTable">
+            <div class="form-group">
+                <label for="tagName">TAG do Medidor</label>
+                <input type="text" class="form-control" id="tagName" placeholder="TAG">
+              </div>
+              <div class="form-group">
+                <label for="instalacaoName">Instalação</label>
+                <input type="text" class="form-control" id="instalacaoName" placeholder="Instalação">
+              </div>
+              <div class="form-group">
+                  <label for="calibracaoDate">Data da última calibração</label>
+                  <input type="text" class="form-control" id="calibracaoDate" placeholder="Data da Calibração">
+              </div>
+
+              <div class="form-group">
+                <label for="enderecoBookEMED">Endereço Book EMED - SGM</label>
+                <input type="text" class="form-control" id="enderecoBookEMED" placeholder="https://...">
+            </div>
+
+              <div class="form-group">
+                <label for="confMetr">Conformidade Metrológica</label>
+                <select class="form-control" id="confMetr">
+                    <option>Equipamento conforme para uso.</option>
+                    <option>Equipamento não conforme para uso.</option>
+                </select>
+            </div>
+
+        </form>
+    </section>
+
+            <div class="text-center">
+                <button type="submit" onclick="gerarQR()" class="btn btn-success">Gerar QR Code</button>
+            </div>
+            
+            
+            <div class="text-center qrcodeimg">
+                <img src="./img/square.png" class="rounded" id ="showQRCODE" alt="QR Code" style="width:100px;height:100px;">
+            </div>
+    
+    
+
+</div>
+
+        <script src="js/scripts.js"></script>
+        <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+<!-- <footer>
+    <p>Author: Cinthia Pereira</p>
+    <p><a href="mailto:pereiracinthiag@gmail.com">pereiracinthiag@gmail.com</a></p>
+  </footer> -->
+
+</html>
+
+
